@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Aref+Ruqaa:400,700');
+body{
+  font-family: 'Aref Ruqaa', serif;
+  font-weight: bold;
+}
+.reset{
+  margin-top: 50px;
+}
+
+h1{
+  font-family: 'Permanent Marker', cursive;
+}
+td {
+  height: 100px;
+  padding: 8px;
+  position: relative;
+  vertical-align: top;
+  width: 100px;
+  border: 10px solid #666;
+}
+
+div {
+  position: relative;
+}
+
+section {
+  display: none;
+  width: 216px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  right: 0;
+  z-index: 0;
+}
+
+table {
+  border-spacing: 6px;
+  margin: 3em auto;
+  position: relative;
+  z-index: 3;
+  font-family: 'Permanent Marker', cursive;
+}
+
+td span {
+  font-size: 59px;
+  margin-left: 26px;
+}
+
+.players, .xis {
+  border: 4px solid #333;
+  border-radius: 50px;
+  width: 200px;
+  background-color: #0aa;
+  margin: 10px auto;  
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn{
+  font-family: 'Permanent Marker', cursive;
+  font-weight:bold;
+  font-size:30px;
+}
+.xo{
+  display:none;
+}
