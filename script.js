@@ -46,16 +46,18 @@ $(document).ready(function() {
   $('td').click(function() {
     if (!fim) {
       if ($(this).children().text() == '') {
-        $(this).children().text(sel);
-        if (!vezPC) {
-          if (sel == 'X') {
-            sel = 'O';
-          } else {
-            sel = 'X';
-          }
-        }
+        $(this).children().text(sel);        
       }
       vencer(sel);
+
+      if (!vezPC) {
+        if (sel == 'X') {
+          sel = 'O';
+        } else {
+          sel = 'X';
+        }
+      }
+
       if (vezPC) {
         if ($('h1').text() == '') {
           fim = true;
@@ -77,6 +79,7 @@ $(document).ready(function() {
   }
 
   function vencer(play) {
+
     if (spaces[0].text() == spaces[1].text() && spaces[0].text() == spaces[2].text() && spaces[2].text() !== '') {
       $('h1').text("The "+play + ' Wins!');
       spaces[0].css('color',"red");
